@@ -1,12 +1,13 @@
 # A context-aware genomic language model for gene spatial expression imputation, pattern detection, and function discovery
 
 
-We develop the **SIGEL** which utilize self-supervised learning on **S**IGEL-**G**enerated **R**epresentations (SGRs) that can simultaneously identify spatially co-expressed genes and learn semantically meaningful gene embeddings from SRT data through a pretext task of gene clustering. **SIGEL** first employs an image encoder to transform the spatial expression maps of genes into gene embeddings modeled by a Student’s t mixture distribution (SMM). Subsequently, a discriminatively boosted gene clustering algorithm is applied on the posterior soft assignments of genes to the mixture components, iteratively adapting the parameters of the encoder and the SMM. 
+We develop **SIGEL**, a pioneer cost-effective self-supervised language model that generates gene manifolds from spatial transcriptomics data through exploiting spatial genomic “context” identified through spatial expression relationships among genes. **S**IGEL-**G**enerated gene **R**epresentations (**SGR**) feature in context-awareness, rich semantics, and robustness to cross-sample technical artifacts. Extensive analyses of real data have demonstrated the biological relevance of the genomic contexts identified by SIGEL, confirming the functional and relational semantics of SGRs. Moreover, SGRs can be applied to a variety of key downstream analytical objectives in biomedical research.
+
 
 # Overview of SIGEL
 
 <p align="center">
-  <img src="https://github.com/WLatSunLab/SIGEL/assets/121435520/e345b6a2-9948-45fe-aaf6-845f0e71eedc" width="700">
+  <img src="https://github.com/user-attachments/assets/d14da606-6678-43b8-9f52-1321b4e556d9" width="700">
 </p>
 
 
