@@ -41,6 +41,7 @@ SIGEL is an innovative self-supervised learning method that represents genes as 
 - sympy>=1.11.1
 - anndata>=0.10.3
 - SpaGCN>=1.2.7
+- tqdm>=4.64.1
 
 ## Installation
 You can download the package from GitHub and install it locally:
