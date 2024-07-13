@@ -2,6 +2,10 @@
 
 
 We develop the **SIGEL** which utilize self-supervised learning on **S**IGEL-**G**enerated **R**epresentations (SGRs) that can simultaneously identify spatially co-expressed genes and learn semantically meaningful gene embeddings from SRT data through a pretext task of gene clustering. **SIGEL** first employs an image encoder to transform the spatial expression maps of genes into gene embeddings modeled by a Student’s t mixture distribution (SMM). Subsequently, a discriminatively boosted gene clustering algorithm is applied on the posterior soft assignments of genes to the mixture components, iteratively adapting the parameters of the encoder and the SMM. 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f1226388-ec47-4d36-b308-935ad0850eab" width="700">
+</p>
+
 # Overview of SIGEL
 
 <p align="center">
