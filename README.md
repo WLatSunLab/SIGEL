@@ -25,7 +25,7 @@ SIGEL is an innovative self-supervised learning method that represents genes as 
 </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/dc31646b-63cb-4dcb-998f-1278d90d16d6" width="800">
+  <img src="https://github.com/user-attachments/assets/dc31646b-63cb-4dcb-998f-1278d90d16d6" width="700">
 </p>
 
 
@@ -73,8 +73,11 @@ Sample data including 10x-hDLPFC-151676, 10x-mEmb, seq-mEmb can be found [here](
 SIGEL offers a variety of functionalities, including but not limited to:
 - Imputing missing genes in FISH-based ST to enhance transcriptomic coverage ([tutorial](https://zipging.github.io/SIGEL.github.io/))
 - Detecting genes with spatial expression patterns
-  -Co-expression ([tutorial](https://zipging.github.io/SIGEL.github.io/))
-  -Spatial variability ([tutorial](https://zipging.github.io/SIGEL.github.io/))
+  
+  -Cross sample gene alignment ([tutorial](https://zipging.github.io/SIGEL.github.io/))
+  
+  -Spatial variability genes detection ([tutorial](https://zipging.github.io/SIGEL.github.io/))
+  
   -Designated expression patterns across specific tissue regions ([tutorial](https://zipging.github.io/SIGEL.github.io/))
 - Identifying disease-associated genes and gene-gene interactions across multiple samples. ([tutorial](https://zipging.github.io/SIGEL.github.io/))
 - Improving spatial clustering ([tutorial](https://zipging.github.io/SIGEL.github.io/))
