@@ -29,8 +29,6 @@ SIGEL is an innovative self-supervised learning method that represents genes as 
 </p>
 
 
-
-
 ## Dependencies
 - Python >=3.9.15
 - torch>=1.13.0
@@ -48,23 +46,10 @@ SIGEL is an innovative self-supervised learning method that represents genes as 
 You can download the package from GitHub and install it locally:
 ```bash
 git clone https://github.com/WLatSunLab/SIGEL.git
+cd SIGEL/
+python3 setup.py install
 ```
 
-## Applicable tasks
-```
-* Enhancement of the transcriptomic coverage.
-* Identify spatially co-expressed and co-functional genes.
-* Predict gene-gene interactions.
-* Detect spatially variable genes.
-* Cluster spatial spots into tissue domains.
-...
-```
-
-## Installation
-You can download the package from GitHub and install it locally:
-```bash
-git clone https://github.com/WLatSunLab/SIGEL.git
-```
 ## Sample data
 Sample data including 10x-hDLPFC-151676, 10x-mEmb, seq-mEmb can be found [here](https://drive.google.com/drive/folders/1C3Gk-HVYp2dQh4id8H68M9p8IWEOIut_?usp=drive_link) and make sure these data are organized in the following structure:
 ```
@@ -82,8 +67,25 @@ Sample data including 10x-hDLPFC-151676, 10x-mEmb, seq-mEmb can be found [here](
         └── ...
 
 ```
-## Getting Started
-The [tutorial](https://zipging.github.io/SIGEL.github.io/) included in the repository provides guidance on how to effectively utilize SIGEL and it is continually being refined to better present the paper.
 
-# Others
+## Getting Started
+SIGEL offers a variety of functionalities, including but not limited to:
+- Imputing missing genes in FISH-based ST to enhance transcriptomic coverage ([tutorial](https://zipging.github.io/SIGEL.github.io/))
+- Detecting genes with spatial expression patterns
+  -Co-expression ([tutorial](https://zipging.github.io/SIGEL.github.io/))
+  -Spatial variability ([tutorial](https://zipging.github.io/SIGEL.github.io/))
+  -Designated expression patterns across specific tissue regions ([tutorial](https://zipging.github.io/SIGEL.github.io/))
+- Identifying disease-associated genes and gene-gene interactions across multiple samples. ([tutorial](https://zipging.github.io/SIGEL.github.io/))
+- Improving spatial clustering ([tutorial](https://zipging.github.io/SIGEL.github.io/))
+
+<p align="justify">
+Before starting the SIGEL tutorial, we need to make some necessary preparations, including installing SIGEL and its required Python dependencies, and downloading the datasets needed for this tutorial. The specific preparation steps can be found in the ([SIGEL Preparation Guide](https://zipging.github.io/SIGEL.github.io/)). Additionally, considering that SIGEL will process a substantial amount of image data, we strongly recommend using a GPU (e.g., an RTX 3090) to pretrain SIGEL. Doing so can significantly accelerate the processing speed of SIGEL during both the training and application phases.
+</p>
+
+
+## Getting help
 If you have any questions or requirements, feel free to reach out to the repository maintainer at zipging@gmail.com.
+
+
+## Citation
+Under review.

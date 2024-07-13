@@ -1,4 +1,4 @@
-from SIGEL.src.main.encoder.MAE_encoder import MAE
+from .encoder.MAE_encoder import MAE
 
 
 '''

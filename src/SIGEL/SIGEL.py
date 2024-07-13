@@ -3,9 +3,9 @@ import torch.nn as nn
 import SpaGCN as spg
 import pickle
 import scanpy as sc
-from SIGEL.src.main import driver
-from SIGEL.src.main.clustering.DEC import DEC
-from SIGEL.src.main._config import Config
+from . import driver
+from .clustering.DEC import DEC
+from ._config import Config
 import pandas as pd
 from tqdm import tqdm
 from scipy.sparse import csr_matrix
