@@ -10,7 +10,7 @@ ST data reveal spatial genomic contexts comprising genes cofunctional in gene pa
 </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/b284de6b-ed82-4f00-9e05-a66de8469145" width="900">
+  <img src="https://github.com/user-attachments/assets/b284de6b-ed82-4f00-9e05-a66de8469145" width="800">
 </p>
 
 ## Framework of SIGEL
@@ -83,7 +83,7 @@ SIGEL offers a variety of functionalities, including but not limited to:
 - Improving spatial clustering ([tutorial](https://zipging.github.io/SIGEL.github.io/))
 
 <p align="justify">
-Before starting the SIGEL tutorial, we need to make some necessary preparations, including installing SIGEL and its required Python dependencies, and downloading the datasets needed for this tutorial. The specific preparation steps can be found in the <a href="[https://www.google.com](https://zipging.github.io/SIGEL.github.io/)">SIGEL Preparation Guide</a>. Additionally, considering that SIGEL will process a substantial amount of image data, we strongly recommend using a GPU (e.g., an RTX 3090) to pretrain SIGEL. Doing so can significantly accelerate the processing speed of SIGEL during both the training and application phases.
+Before starting the SIGEL tutorial, we need to make some necessary preparations, including installing SIGEL and its required Python dependencies, and downloading the datasets needed for this tutorial. The specific preparation steps can be found in the <a href="https://zipging.github.io/SIGEL.github.io/">SIGEL Preparation Guide</a>. Additionally, considering that SIGEL will process a substantial amount of image data, we strongly recommend using a GPU (e.g., an RTX 3090) to pretrain SIGEL. Doing so can significantly accelerate the processing speed of SIGEL during both the training and application phases.
 </p>
 
 
