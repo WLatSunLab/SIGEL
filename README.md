@@ -1,27 +1,32 @@
 # A context-aware genomic language model for gene spatial expression imputation, pattern detection, and function discovery
 
-
-We develop **SIGEL**, a pioneer cost-effective self-supervised language model that generates gene manifolds from spatial transcriptomics data through exploiting spatial genomic “context” identified through spatial expression relationships among genes. **S**IGEL-**G**enerated gene **R**epresentations (**SGR**) feature in context-awareness, rich semantics, and robustness to cross-sample technical artifacts. Extensive analyses of real data have demonstrated the biological relevance of the genomic contexts identified by SIGEL, confirming the functional and relational semantics of SGRs. Moreover, SGRs can be applied to a variety of key downstream analytical objectives in biomedical research.
-
+<p align="justify">
+We develop <strong>SIGEL</strong>, a pioneer cost-effective self-supervised language model that generates gene manifolds from spatial transcriptomics data through exploiting spatial genomic “context” identified through spatial expression relationships among genes. <strong>S</strong>IGEL-<strong>G</strong>enerated gene <strong>R</strong>epresentations (<strong>SGEs</strong>) feature in context-awareness, rich semantics, and robustness to cross-sample technical artifacts. Extensive analyses of real data have demonstrated the biological relevance of the genomic contexts identified by SIGEL, confirming the functional and relational semantics of SGRs. Moreover, SGRs can be applied to a variety of key downstream analytical objectives in biomedical research.
+</p>
 
 ## Outline
+<p align="justify">
 ST data reveal spatial genomic contexts comprising genes cofunctional in gene pathways and networks since they tend to exhibit similar expression patterns across tissue space. By leveraging these genomic contexts, distributed gene representations can be learned. These representations not only encapsulate gene spatial functional and relational semantics but also instrumental in facilitating various downstream task-specific objectives.
+</p>
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/b284de6b-ed82-4f00-9e05-a66de8469145" width="900">
 </p>
 
 ## Framework of SIGEL
+<p align="justify">
 SIGEL is an innovative self-supervised learning method that represents genes as distributed manifolds, capturing both spatial gene expression and gene co-expression information through masked autoencoder and boasting clustering. The framework comprises three key modules:
 
-*Module I* employs an adapted masked autoencoder to learn the representations of gene images, which enhances gene embeddings’ local-context perceptibility.
+<i>Module I</i> employs an adapted masked autoencoder to learn the representations of gene images, which enhances gene embeddings’ local-context perceptibility.
 
-*Module II* involves modeling gene embeddings using a Student’s t mixture model, with parameters estimated via a MAP-EM algorithm. This module aims to maximize the likelihood of the entire dataset.
+<i>Module II</i> involves modeling gene embeddings using a Student’s t mixture model, with parameters estimated via a MAP-EM algorithm. This module aims to maximize the likelihood of the entire dataset.
 
-*Module III* refines gene embeddings through a self-paced pretext task designed to identify genomic contexts via iterative pseudo-contrastive learning. Together, Modules II and III complete a single training epoch, during which the discriminability of gene embeddings is significantly enhanced.
+<i>Module III</i> refines gene embeddings through a self-paced pretext task designed to identify genomic contexts via iterative pseudo-contrastive learning. Together, Modules II and III complete a single training epoch, during which the discriminability of gene embeddings is significantly enhanced.
+</p>
 
-
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/dc31646b-63cb-4dcb-998f-1278d90d16d6" width="800">
+</p>
 
 
 
