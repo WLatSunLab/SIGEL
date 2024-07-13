@@ -83,7 +83,7 @@ SIGEL offers a variety of functionalities, including but not limited to:
 - Improving spatial clustering ([tutorial](https://zipging.github.io/SIGEL.github.io/))
 
 <p align="justify">
-Before starting the SIGEL tutorial, we need to make some necessary preparations, including installing SIGEL and its required Python dependencies, and downloading the datasets needed for this tutorial. The specific preparation steps can be found in the ([SIGEL Preparation Guide](https://zipging.github.io/SIGEL.github.io/)). Additionally, considering that SIGEL will process a substantial amount of image data, we strongly recommend using a GPU (e.g., an RTX 3090) to pretrain SIGEL. Doing so can significantly accelerate the processing speed of SIGEL during both the training and application phases.
+Before starting the SIGEL tutorial, we need to make some necessary preparations, including installing SIGEL and its required Python dependencies, and downloading the datasets needed for this tutorial. The specific preparation steps can be found in the <a href="[https://www.google.com](https://zipging.github.io/SIGEL.github.io/)">SIGEL Preparation Guide</a>. Additionally, considering that SIGEL will process a substantial amount of image data, we strongly recommend using a GPU (e.g., an RTX 3090) to pretrain SIGEL. Doing so can significantly accelerate the processing speed of SIGEL during both the training and application phases.
 </p>
 
 
