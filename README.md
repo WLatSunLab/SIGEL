@@ -32,18 +32,22 @@ SIGEL is an innovative self-supervised learning method that represents genes as 
 
 
 ## Dependencies
-```
-[Python 3.9.15]
-[torch 1.13.0]
-[rpy2 3.5.13]
-[sklearn 1.2.0]
-[scanpy 1.9.3]
-[scipy 1.9.3]
-[pandas 1.5.2]
-[numpy 1.21.6]
-[sympy 1.11.1]
-[SpaGCN 1.2.7]
-[anndata 0.10.3]
+- Python >=3.9.15
+- torch>=1.13.0
+- rpy2>=3.5.13
+- scikit-learn>=1.2.0
+- scanpy>=1.9.6
+- scipy>=1.11.4
+- pandas>=1.5.2
+- numpy>=1.21.6
+- sympy>=1.11.1
+- anndata>=0.10.3
+- SpaGCN>=1.2.7
+
+## Installation
+You can download the package from GitHub and install it locally:
+```bash
+git clone https://github.com/WLatSunLab/SIGEL.git
 ```
 
 ## Applicable tasks
