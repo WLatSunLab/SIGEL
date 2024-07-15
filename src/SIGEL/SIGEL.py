@@ -32,7 +32,7 @@ class SIGEL():
     def get_data(sample_id, data_type='image'):
         assert sample_id == '151676', "please choose the 151676 for testing"
         if data_type == 'image':
-            path_file = f"SIGEL/data/DLPFC_matrix_{sample_id}.dat"
+            path_file = f"data/DLPFC_matrix_{sample_id}.dat"
             with open(path_file,'rb') as f:
                 all_gene_exp_matrices = pickle.load(f)
             all_gmat = {k:all_gene_exp_matrices[k].todense() for k in list(all_gene_exp_matrices.keys())}
@@ -40,7 +40,7 @@ class SIGEL():
             
             return dataset
         else:
-            path_file = f"SIGEL/data/{sample_id}_10xvisium.h5ad"
+            path_file = f"data/{sample_id}_10xvisium.h5ad"
             adata = sc.read_h5ad(path_file)
         
             return adata
@@ -72,12 +72,15 @@ class SIGEL():
                 g_matrix[row_ix,col_ix] = g[i][0]
             all_gene_exp_matrices[gene] = csr_matrix(g_matrix)
         all_gmat = {k:all_gene_exp_matrices[k] for k in list(all_gene_exp_matrices.keys())}
+        with open('data/DLPFC_matrix_151676.dat', 'wb') as file:
+            pickle.dump(all_gmat, file)
+
         dataset=np.array(list(all_gmat.values()))
         dataset = np.array([x.todense() for x in dataset])
         
         return dataset, adata
     
-    def train(dataset, pretrain = False):
+    def train(dataset, pretrain = False, total = None):
         image_size = (dataset.shape[1], dataset.shape[2])
         config = Config(dataset='Gene image', model='MAE').get_parameters()
         cuda = torch.cuda.is_available()
@@ -90,8 +93,8 @@ class SIGEL():
                            batch_size=config['batch_size'], 
                            lr=config['lr'],
                            pretrain = pretrain)
-        z, model= DEC(model, dataset, config = config)
+        y_pred_last, z, model= DEC(model, dataset, config = config)
         #return model
-        return z, model
+        return y_pred_last, z, model
         #return model
 

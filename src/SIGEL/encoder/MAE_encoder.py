@@ -447,13 +447,13 @@ class MAE(nn.Module):
                  depth=3,
                  num_heads=4,
                  dim_head=4,
-                 decoder='MNIST', 
+                 decoder='MNIST',
                  decoder_embed_dim=16,
                  mlp_ratio=4.,
                  norm_pix_loss=False,
                  alpha=1,
                  n_clusters=500,
-                 pretrain_path='SIGEL/model_pretrained/SIGEL.pkl'):
+                 pretrain_path='model_pretrained/SIGEL.pkl'):
         super(MAE, self).__init__()
         self.alpha = alpha
         self.pretrain_path = pretrain_path
@@ -536,7 +536,7 @@ def pretrain_mae(model, dataset, batch_size, lr, pretrain_path):
                 {'params': model.parameters()},
                 {'params': awl.parameters(), 'weight_decay': 0}
             ], lr=lr)
-    for epoch in tqdm(range(30), desc='Pretrain'):
+    for epoch in tqdm(range(50), desc='Pretrain'):
         total_loss = 0.
         total_contras_loss = 0.
         total_contro_loss = 0.
