@@ -306,4 +306,3 @@ class SIGEL_ETC():
         y_pred, z, model= DEC(model, dataset, total = total, config = config)
 
         return y_pred, model
-

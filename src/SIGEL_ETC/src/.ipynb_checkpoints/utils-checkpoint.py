@@ -257,10 +257,10 @@ def sequential_gen(model, ETC_GAN, all_gmat_v2m, all_gmat_m2v):
     return dataset_m3, key_m
 
 def ari_evalution(adata):
-    sc.pp.neighbors(adata, n_neighbors=10, use_rep='X')
+    sc.pp.neighbors(adata, n_neighbors=10, n_pcs=20, use_rep='X')
     sc.tl.umap(adata)
     resolution = find_resolution(adata, 0.1, 1.0, 22)
-    sc.tl.leiden(adata, resolution=resolution)
+    sc.tl.leiden(adata, resolution=0.2125)
     # 计算原始nmi
     leiden_seqfish_part = list(adata.obs['leiden'])
     leiden_seqfish_part = np.array(leiden_seqfish_part).astype(int)
