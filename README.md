@@ -74,7 +74,11 @@ SIGEL offers a variety of functionalities, including but not limited to:
 - Imputing missing genes in FISH-based ST to enhance transcriptomic coverage ([tutorial](https://zipging.github.io/SIGEL.github.io/))
 - Detecting genes with spatial expression patterns
   
+<<<<<<< HEAD
   -Gene clustering ([tutorial](https://zipging.github.io/SIGEL.github.io/))
+=======
+  -Co-expression genes ([tutorial](https://zipging.github.io/SIGEL.github.io/))
+>>>>>>> e8371575f6a5b5a78bf6eed3f63de52009c2b497
   
   -Spatial variability genes detection ([tutorial](https://zipging.github.io/SIGEL.github.io/))
   
