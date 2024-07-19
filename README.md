@@ -71,23 +71,18 @@ Sample data including 10x-hDLPFC-151676, 10x-mEmb, seq-mEmb can be found [here](
 
 ## Getting Started
 SIGEL offers a variety of functionalities, including but not limited to:
-- Imputing missing genes in FISH-based ST to enhance transcriptomic coverage ([tutorial](https://zipging.github.io/SIGEL.github.io/))
-- Detecting genes with spatial expression patterns
-  
-<<<<<<< HEAD
-  -Gene clustering ([tutorial](https://zipging.github.io/SIGEL.github.io/))
-=======
-  -Co-expression genes ([tutorial](https://zipging.github.io/SIGEL.github.io/))
->>>>>>> e8371575f6a5b5a78bf6eed3f63de52009c2b497
-  
-  -Spatial variability genes detection ([tutorial](https://zipging.github.io/SIGEL.github.io/))
-  
-  -Designated expression patterns across specific tissue regions ([tutorial](https://zipging.github.io/SIGEL.github.io/))
+- Imputing missing genes in FISH-based ST to enhance transcriptomic coverage ([tutorial](https://zipging.github.io/SIGEL.github.io/#3-imputing-missing-genes-in-fish-based-st-to-enhance-transcriptomic-coverage))
+- Detecting genes with spatial expression patterns ([tutorial](https://zipging.github.io/SIGEL.github.io/#4-spatial-variability-genes-detection))
+
+  -Co-expression genes
+  -Spatial variability genes detection
+  -Designated expression patterns across specific tissue regions
+
 - Identifying disease-associated genes and gene-gene interactions across multiple samples. ([tutorial](https://zipging.github.io/SIGEL.github.io/))
 - Improving spatial clustering ([tutorial](https://zipging.github.io/SIGEL.github.io/))
 
 <p align="justify">
-Before starting the SIGEL tutorial, we need to make some necessary preparations, including installing SIGEL and its required Python dependencies, and downloading the datasets needed for this tutorial. The specific preparation steps can be found in the <a href="https://zipging.github.io/SIGEL.github.io/">SIGEL Preparation Guide</a>. Additionally, considering that SIGEL will process a substantial amount of image data, we strongly recommend using a GPU (e.g., an RTX 3090) to pretrain SIGEL. Doing so can significantly accelerate the processing speed of SIGEL during both the training and application phases.
+Before starting the SIGEL tutorial, we need to make some necessary preparations, including installing SIGEL and its required Python dependencies, and downloading the datasets needed for this tutorial. The specific preparation steps can be found in the <a href="https://zipging.github.io/SIGEL.github.io/#1-preparation">SIGEL Preparation Guide</a>. Additionally, considering that SIGEL will process a substantial amount of image data, we strongly recommend using a GPU (e.g., an RTX 3090) to pretrain SIGEL. Doing so can significantly accelerate the processing speed of SIGEL during both the training and application phases.
 </p>
 
 
