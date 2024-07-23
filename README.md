@@ -75,7 +75,9 @@ SIGEL offers a variety of functionalities, including but not limited to:
 - Detecting genes with spatial expression patterns ([tutorial](https://zipging.github.io/SIGEL.github.io/#4-spatial-variability-genes-detection))
 
   -Co-expression genes
+  
   -Spatial variability genes detection
+  
   -Designated expression patterns across specific tissue regions
 
 - Identifying disease-associated genes and gene-gene interactions across multiple samples. ([tutorial](https://zipging.github.io/SIGEL.github.io/))
