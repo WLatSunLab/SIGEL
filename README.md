@@ -9,8 +9,9 @@ We develop <strong>SIGEL</strong>, a pioneer cost-effective self-supervised lang
 ST data reveal spatial genomic contexts comprising genes cofunctional in gene pathways and networks since they tend to exhibit similar expression patterns across tissue space. By leveraging these genomic contexts, distributed gene representations can be learned. These representations not only encapsulate gene spatial functional and relational semantics but also instrumental in facilitating various downstream task-specific objectives.
 </p>
 
+
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/b284de6b-ed82-4f00-9e05-a66de8469145" width="800">
+  <img src="https://github.com/user-attachments/assets/7add660b-cd47-48ca-89be-2b4ea561023b" width="1000">
 </p>
 
 ## Framework of SIGEL
@@ -25,7 +26,7 @@ SIGEL is an innovative self-supervised learning method that represents genes as 
 </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/dc31646b-63cb-4dcb-998f-1278d90d16d6" width="700">
+  <img src="https://github.com/user-attachments/assets/d319e402-8e2a-4eb7-a572-c9cb8cb950a9" width="1000">
 </p>
 
 
